@@ -1,3 +1,4 @@
+# 整数反转
 
 给出一个 32 位的有符号整数，你需要将这个整数中每位上的数字进行反转。
 
@@ -29,7 +30,7 @@ var reverse = function(x) {
     while(x !== 0) {
         result = 10 * result + x % 10;
         // *-1 -1
-        x = ~~(x/10)  
+        x = ~~(x/10)
     }
     if(result < min) return 0;
     if(result > max) return 0

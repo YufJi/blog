@@ -1,3 +1,5 @@
+# 对称二叉树
+
 给定一个二叉树，检查它是否是镜像对称的。
 
 例如，二叉树 [1,2,2,3,4,4,3] 是对称的。
@@ -34,7 +36,7 @@ var isSymmetric = function(root) {
     }
     return a.val === b.val && compare(a.left, b.right) && compare(a.right, b.left);
   }
-  
+
   return compare(root, root);;
 };
 
@@ -66,11 +68,11 @@ var isSymmetric = function(root) {
       flag = false;
     }
   }
-  
+
   if (root === null) {
     return flag;
-  } 
-  
+  }
+
   xx(root.left, root.right);
 
   return flag;

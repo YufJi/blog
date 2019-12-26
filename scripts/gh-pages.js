@@ -1,8 +1,8 @@
 var ghpages = require('gh-pages');
- 
-ghpages.publish('docs', function(err) {
+
+ghpages.publish('dist', function(err) {
   if (!err) {
     console.log('sucess')
   }
-  
+
 });

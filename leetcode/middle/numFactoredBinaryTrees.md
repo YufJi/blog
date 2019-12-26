@@ -1,4 +1,6 @@
 
+# 带因子的二叉树
+
 给出一个含有不重复整数元素的数组，每个整数均大于 1。
 
 我们用这些整数来构建二叉树，每个整数可以使用任意次数。
@@ -51,7 +53,7 @@ var numFactoredBinaryTrees = function(array) {
         if (map.has(right)) {
           dp[i] = (dp[i] + dp[j] * dp[map.get(right)]) % MOD;
         }
-      } 
+      }
     }
   }
 

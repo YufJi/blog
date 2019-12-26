@@ -1,3 +1,4 @@
+# 最小覆盖串
 
 给你一个字符串 S、一个字符串 T，请在字符串 S 里面找出：包含 T 所有字母的最小子串。
 
@@ -50,7 +51,7 @@ function minWindow(s, t) {
     }
 
     while (miniSize === tMap.size) {
-       
+
       if(miniLength === -1 || R-L+1 < miniLength) {
         miniLength = R-L+1;
         miniLeft = L;
