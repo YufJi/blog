@@ -1,7 +1,7 @@
 ---
 home: true
 actionText: 开始 →
-actionLink: easy/twoSum
+actionLink: easy/binarySearch
 features:
 - title: leetcode
   details: '记录日常leetcode的刷题过程'
