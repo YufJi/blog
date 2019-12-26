@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>两数相加 | LeetCode</title>
+    <meta name="description" content="记录自己的刷题之旅">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.a7435aa2.css" as="style"><link rel="preload" href="/assets/js/app.f1fec5ce.js" as="script"><link rel="preload" href="/assets/js/2.1952592c.js" as="script"><link rel="preload" href="/assets/js/15.b0ead002.js" as="script"><link rel="prefetch" href="/assets/js/10.453da0f6.js"><link rel="prefetch" href="/assets/js/11.b019b936.js"><link rel="prefetch" href="/assets/js/12.1a1651c1.js"><link rel="prefetch" href="/assets/js/13.2d920cdb.js"><link rel="prefetch" href="/assets/js/14.d7ad5fb2.js"><link rel="prefetch" href="/assets/js/16.ac5a4a2f.js"><link rel="prefetch" href="/assets/js/17.b0368705.js"><link rel="prefetch" href="/assets/js/18.b644e5bf.js"><link rel="prefetch" href="/assets/js/19.b95317d5.js"><link rel="prefetch" href="/assets/js/20.2c461240.js"><link rel="prefetch" href="/assets/js/3.d643d5cf.js"><link rel="prefetch" href="/assets/js/4.92e67d36.js"><link rel="prefetch" href="/assets/js/5.6d04bb00.js"><link rel="prefetch" href="/assets/js/6.18951cdd.js"><link rel="prefetch" href="/assets/js/7.88d491e0.js"><link rel="prefetch" href="/assets/js/8.5c348862.js"><link rel="prefetch" href="/assets/js/9.e513774c.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.a7435aa2.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">LeetCode</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>简单</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>中等</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/middle/addTwoNumbers.html" class="active sidebar-link">两数相加</a></li><li><a href="/middle/lengthOfLongestSubstring.html" class="sidebar-link">无重复字符的最长子串</a></li><li><a href="/middle/numFactoredBinaryTrees.html" class="sidebar-link">带因子的二叉树</a></li><li><a href="/middle/pow.html" class="sidebar-link">Pow(x, n)</a></li><li><a href="/middle/threeSum.html" class="sidebar-link">三数之和</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>困难</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="两数相加"><a href="#两数相加" class="header-anchor">#</a> 两数相加</h1> <p>给出两个 非空 的链表用来表示两个非负的整数。其中，它们各自的位数是按照 逆序 的方式存储的，并且它们的每个节点只能存储 一位 数字。</p> <p>如果，我们将这两个数相加起来，则会返回一个新的链表来表示它们的和。</p> <p>您可以假设除了数字 0 之外，这两个数都不会以 0 开头。</p> <p>示例：</p> <div class="language-sh extra-class"><pre class="language-sh"><code>输入：<span class="token punctuation">(</span><span class="token number">2</span> -<span class="token operator">&gt;</span> <span class="token number">4</span> -<span class="token operator">&gt;</span> <span class="token number">3</span><span class="token punctuation">)</span> + <span class="token punctuation">(</span><span class="token number">5</span> -<span class="token operator">&gt;</span> <span class="token number">6</span> -<span class="token operator">&gt;</span> <span class="token number">4</span><span class="token punctuation">)</span>
+输出：7 -<span class="token operator">&gt;</span> <span class="token number">0</span> -<span class="token operator">&gt;</span> <span class="token number">8</span>
+原因：342 + <span class="token number">465</span> <span class="token operator">=</span> <span class="token number">807</span>
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * Definition for singly-linked list.
+ * function ListNode(val) {
+ *     this.val = val;
+ *     this.next = null;
+ * }
+ */</span>
+<span class="token comment">/**
+ * @param {ListNode} l1
+ * @param {ListNode} l2
+ * @return {ListNode}
+ */</span>
+<span class="token keyword">var</span> <span class="token function-variable function">addTwoNumbers</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">l1<span class="token punctuation">,</span> l2</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> dummyHead <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+  <span class="token keyword">let</span> result <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ListNode</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">let</span> tmp <span class="token operator">=</span> result<span class="token punctuation">;</span>
+
+  <span class="token keyword">function</span> <span class="token function">abc</span><span class="token punctuation">(</span><span class="token parameter">a <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> b <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> tmp</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> sum <span class="token operator">=</span> <span class="token punctuation">(</span>a<span class="token punctuation">.</span>val <span class="token operator">||</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token punctuation">(</span>b<span class="token punctuation">.</span>val <span class="token operator">||</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">+</span> dummyHead<span class="token punctuation">;</span>
+    dummyHead <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token comment">// 重置补位</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>sum <span class="token operator">&gt;</span> <span class="token number">9</span><span class="token punctuation">)</span> dummyHead <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">floor</span><span class="token punctuation">(</span>sum<span class="token operator">/</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// result.push(sum % 10)</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>tmp<span class="token punctuation">.</span>val <span class="token operator">===</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      tmp<span class="token punctuation">.</span>val <span class="token operator">=</span> sum <span class="token operator">%</span> <span class="token number">10</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">while</span> <span class="token punctuation">(</span>l1 <span class="token operator">||</span> l2 <span class="token operator">||</span> dummyHead<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      l1 <span class="token operator">=</span> l1 <span class="token operator">||</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+      l2 <span class="token operator">=</span> l2 <span class="token operator">||</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+      <span class="token function">abc</span><span class="token punctuation">(</span>l1<span class="token punctuation">,</span> l2<span class="token punctuation">,</span> tmp<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>l1<span class="token punctuation">.</span>next <span class="token operator">||</span> l2<span class="token punctuation">.</span>next <span class="token operator">||</span> dummyHead<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>tmp<span class="token punctuation">.</span>next <span class="token operator">===</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          tmp<span class="token punctuation">.</span>next <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ListNode</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        tmp <span class="token operator">=</span> tmp<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+      l1 <span class="token operator">=</span> l1<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+      l2 <span class="token operator">=</span> l2<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">return</span> result<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/easy/twoSum.html" class="prev">两数之和</a></span> <span class="next"><a href="/middle/lengthOfLongestSubstring.html">无重复字符的最长子串</a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.f1fec5ce.js" defer></script><script src="/assets/js/2.1952592c.js" defer></script><script src="/assets/js/15.b0ead002.js" defer></script>
+  </body>
+</html>
