@@ -28,6 +28,7 @@ module.exports = {
           '/easy/isSymmetric',
           '/easy/reverse',
           '/easy/twoSum',
+          '/easy/findContentChildren',
         ]
       },
       {
