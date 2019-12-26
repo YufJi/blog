@@ -21,8 +21,10 @@
     "url": "https://github.com/YufJi/blog/issues"
   },
   "homepage": "https://github.com/YufJi/blog#readme",
-  "devDependencies": {
-    "gh-pages": "^2.1.1",
+  "dependencies": {
     "vuepress": "^1.2.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.1.1"
   }
 }

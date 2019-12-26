@@ -13,7 +13,7 @@ module.exports = {
       buttonText: 'Refresh',
     },
   },
-  dest: 'dist',
+  dest: 'docs',
   themeConfig: {
     activeHeaderLinks: false,
     editLinks: true,
