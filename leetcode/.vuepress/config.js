@@ -39,7 +39,9 @@ module.exports = {
           '/middle/numFactoredBinaryTrees',
           '/middle/pow',
           '/middle/threeSum',
-          '/middle/findMinArrowShots'
+          '/middle/findMinArrowShots',
+          '/middle/combine',
+          '/middle/generateParenthesis'
         ]
       },
       {
