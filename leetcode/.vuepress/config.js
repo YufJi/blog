@@ -5,7 +5,7 @@ const cwd = process.cwd()
 
 module.exports = {
   base: '/blog/',
-  title: "LeetCode",
+  title: "YufJ's LeetCode Travel",
   description: '记录自己的刷题之旅',
   serviceWorker: {
     updatePopup: {
