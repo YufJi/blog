@@ -1,6 +1,8 @@
 
 const path = require('path')
 
+const listDirectory = require('./utils/listDirectory')
+
 const cwd = process.cwd()
 
 module.exports = {
@@ -22,35 +24,15 @@ module.exports = {
     sidebar: [
       {
         title: '简单',   // 必要的
-        children: [
-          '/easy/binarySearch',
-          '/easy/distributeCandies',
-          '/easy/isSymmetric',
-          '/easy/reverse',
-          '/easy/twoSum',
-          '/easy/findContentChildren',
-        ]
+        children: listDirectory(path.join(__dirname, '../easy')).filter(f => f.type === 'file').map(item => `/easy/${item.fileName.replace('.md', '')}`)
       },
       {
         title: '中等',   // 必要的
-        children: [
-          '/middle/addTwoNumbers',
-          '/middle/lengthOfLongestSubstring',
-          '/middle/numFactoredBinaryTrees',
-          '/middle/pow',
-          '/middle/threeSum',
-          '/middle/findMinArrowShots',
-          '/middle/combine',
-          '/middle/generateParenthesis'
-        ]
+        children: listDirectory(path.join(__dirname, '../middle')).filter(f => f.type === 'file').map(item => `/middle/${item.fileName.replace('.md', '')}`)
       },
       {
         title: '困难',   // 必要的
-        children: [
-          '/hard/findMedianSortedArrays',
-          '/hard/firstMissingPositive',
-          '/hard/minWindow',
-        ]
+        children: listDirectory(path.join(__dirname, '../hard')).filter(f => f.type === 'file').map(item => `/hard/${item.fileName.replace('.md', '')}`)
       }
     ],
   },
