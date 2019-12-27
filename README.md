@@ -1,4 +1,7 @@
 
+
+[![Build Status](https://www.travis-ci.org/YufJi/blog.svg?branch=master)](https://www.travis-ci.org/YufJi/blog)
+
 ## [leetcode](https://yufji.github.io/blog/)
 
 ### 开始记录工作学习中的点点滴滴
