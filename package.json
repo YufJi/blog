@@ -8,8 +8,7 @@
   },
   "scripts": {
     "dev": "vuepress dev leetcode",
-    "build": "vuepress build leetcode",
-    "pub": "npm run build && node scripts/gh-pages.js"
+    "build": "vuepress build leetcode"
   },
   "repository": {
     "type": "git",
@@ -23,8 +22,5 @@
   "homepage": "https://github.com/YufJi/blog#readme",
   "dependencies": {
     "vuepress": "^1.2.0"
-  },
-  "devDependencies": {
-    "gh-pages": "^2.1.1"
   }
 }
