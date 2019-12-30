@@ -37,14 +37,14 @@ module.exports = {
     ],
   },
   head: [
-    ['link', { rel: 'icon', href: '/icons/icon.png' }],
+    ['link', { rel: 'icon', href: '/icons/icon-128x128.png' }],
     ['link', { rel: 'manifest', href: '/manifest.json' }],
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black-translucent' }],
-    ['link', { rel: 'apple-touch-icon', href: '/icons/icon.png' }],
-    ['link', { rel: 'mask-icon', href: '/icons/icon.png', color: '#3eaf7c' }],
-    ['meta', { name: 'msapplication-TileImage', content: '/icons/icon.png' }],
+    ['link', { rel: 'apple-touch-icon', href: '/icons/icon-128x128.png' }],
+    ['link', { rel: 'mask-icon', href: '/icons/icon-128x128.png', color: '#3eaf7c' }],
+    ['meta', { name: 'msapplication-TileImage', content: '/icons/icon-128x128.png' }],
     ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
   ],
   plugins: ['@vuepress/pwa', {
