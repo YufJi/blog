@@ -73,7 +73,7 @@ function carPooling(trips, capacity) {
     }
   }
 
-  while (start < end + 1 && capacity >= 0) {
+  while (start < end + 1) {
     const count = hashMap[start] || 0;
     capacity = capacity + count;
     if (capacity < 0) {
