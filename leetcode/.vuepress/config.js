@@ -41,7 +41,7 @@ module.exports = {
     ['link', { rel: 'manifest', href: '/manifest.json' }],
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
-    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'white' }],
+    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'default' }],
     ['link', { rel: 'apple-touch-icon', href: '/icons/logo.jpeg' }],
     ['link', { rel: 'mask-icon', href: '/icons/logo.jpeg', color: '#3eaf7c' }],
     ['meta', { name: 'msapplication-TileImage', content: '/icons/logo.jpeg' }],
