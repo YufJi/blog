@@ -24,7 +24,7 @@ function twoSum(arr, target) {
   for (let i = 0; i < arr.length; i++) {
     const element = arr[i];
     const rest = target - element;
-    if (record[rest]) {
+    if (record[rest] !== undefined) {
       return ([record[rest], i])
     }
     record[element] = i;
