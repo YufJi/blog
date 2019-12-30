@@ -6,8 +6,8 @@
   "background_color": "#fff",
   "description": "Yuf's leetcode travel.",
   "icons": [{
-    "src": "/icons/logo.jpeg",
+    "src": "/icons/icon.png",
     "sizes": "48x48",
-    "type": "image/jpeg"
+    "type": "image/png"
   }]
 }
