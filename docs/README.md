@@ -1,7 +1,7 @@
 ---
 home: true
 actionText: 开始 →
-actionLink: easy/binarySearch
+actionLink: leetcode/easy/binarySearch
 features:
 - title: 学习
   details: 记录日常leetcode的刷题过程.
