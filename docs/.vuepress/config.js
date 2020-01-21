@@ -41,6 +41,11 @@ module.exports = {
         title: '前端知识',
         collapsable: false,
         children: [
+            {
+            title: '实践',
+            sidebarDepth: 0,
+            children: listDirectory(path.join(__dirname, '../shared/practice')).filter(f => f.type === 'file').map(item => `/shared/practice/${item.fileName}`)
+          },
           {
             title: 'js',
             sidebarDepth: 0,
