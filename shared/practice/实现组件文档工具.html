@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>实现一个简易React UI组件文档小工具 | YufJ&#39;s Blog</title>
+    <meta name="description" content="记录自己的刷题之旅和分享">
+    <link rel="icon" href="/blog/icons/fruits.svg">
+  <link rel="manifest" href="/blog/manifest.json">
+  <meta name="theme-color" content="#3eaf7c">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="apple-touch-icon" href="/blog/icons/fruits.svg">
+  <link rel="mask-icon" href="/blog/icons/fruits.svg" color="#3eaf7c">
+  <meta name="msapplication-TileImage" content="/icons/fruits.svg">
+  <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.97723510.css" as="style"><link rel="preload" href="/blog/assets/js/app.ff60ca48.js" as="script"><link rel="preload" href="/blog/assets/js/2.ec312a92.js" as="script"><link rel="preload" href="/blog/assets/js/5.53ee2f3f.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.62c35db3.js"><link rel="prefetch" href="/blog/assets/js/11.9f8baff1.js"><link rel="prefetch" href="/blog/assets/js/12.1c3ee7db.js"><link rel="prefetch" href="/blog/assets/js/13.6aef3a33.js"><link rel="prefetch" href="/blog/assets/js/14.6b8f793a.js"><link rel="prefetch" href="/blog/assets/js/15.2209412a.js"><link rel="prefetch" href="/blog/assets/js/16.379980d4.js"><link rel="prefetch" href="/blog/assets/js/17.5003681f.js"><link rel="prefetch" href="/blog/assets/js/18.434c664e.js"><link rel="prefetch" href="/blog/assets/js/19.5d20ec78.js"><link rel="prefetch" href="/blog/assets/js/20.055f15b3.js"><link rel="prefetch" href="/blog/assets/js/21.c2ae0c91.js"><link rel="prefetch" href="/blog/assets/js/22.bc018b08.js"><link rel="prefetch" href="/blog/assets/js/23.67862268.js"><link rel="prefetch" href="/blog/assets/js/24.5872ee93.js"><link rel="prefetch" href="/blog/assets/js/25.89acdb84.js"><link rel="prefetch" href="/blog/assets/js/26.fb7ec8b7.js"><link rel="prefetch" href="/blog/assets/js/27.8b4ed413.js"><link rel="prefetch" href="/blog/assets/js/28.232d537c.js"><link rel="prefetch" href="/blog/assets/js/29.dac65d97.js"><link rel="prefetch" href="/blog/assets/js/3.412ba3c3.js"><link rel="prefetch" href="/blog/assets/js/4.0f73fac0.js"><link rel="prefetch" href="/blog/assets/js/6.6a1f417f.js"><link rel="prefetch" href="/blog/assets/js/7.e1e59c60.js"><link rel="prefetch" href="/blog/assets/js/8.c17e74b9.js"><link rel="prefetch" href="/blog/assets/js/9.97c094a0.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.97723510.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><!----> <span class="site-name">YufJ's Blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>LeetCode</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading open"><span>简单</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/leetcode/easy/binarySearch.html" class="sidebar-link">二分查找</a></li><li><a href="/blog/leetcode/easy/distributeCandies.html" class="sidebar-link">分糖果</a></li><li><a href="/blog/leetcode/easy/findContentChildren.html" class="sidebar-link">分发饼干</a></li><li><a href="/blog/leetcode/easy/isSymmetric.html" class="sidebar-link">对称二叉树</a></li><li><a href="/blog/leetcode/easy/reverse.html" class="sidebar-link">整数反转</a></li><li><a href="/blog/leetcode/easy/searchInsert.html" class="sidebar-link">搜索插入位置</a></li><li><a href="/blog/leetcode/easy/twoSum.html" class="sidebar-link">两数之和</a></li></ul></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>中等</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>困难</span> <span class="arrow right"></span></p> <!----></section></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>前端知识</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading open"><span>实践</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/shared/practice/实现组件文档工具.html" class="active sidebar-link">实现一个简易React UI组件文档小工具</a></li></ul></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>js</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>css</span> <span class="arrow right"></span></p> <!----></section></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="实现一个简易react-ui组件文档小工具"><a href="#实现一个简易react-ui组件文档小工具" class="header-anchor">#</a> 实现一个简易React UI组件文档小工具</h1> <blockquote><p>以下示例代码，可能包含多个文件代码，有点乱。 <br>
+脚手架构建用到了umi/af-webpack，文档布局样式用到了vant-ui。</p></blockquote> <h2 id="梳理思路"><a href="#梳理思路" class="header-anchor">#</a> 梳理思路</h2> <ul><li>实现一个通用脚手架，完成初始化项目，构建，发布组件文档。</li> <li>脚手架的构建环节选用webpack，因为文档站点其实也是一个应用</li> <li>组件需要具备预览功能，所以我们可以采取MPA的方式多入口打包</li> <li>约定一个配置文件，里面主要配置文档的header、sideBar等，这部分也相当于配置了route</li> <li>使用require.context加载用户目录下的md文件</li></ul> <h2 id="效果图"><a href="#效果图" class="header-anchor">#</a> 效果图</h2> <img src="/blog/assets/img/yufpress.d679bac0.png"> <h2 id="开始实现"><a href="#开始实现" class="header-anchor">#</a> 开始实现</h2> <h3 id="脚手架"><a href="#脚手架" class="header-anchor">#</a> 脚手架</h3> <h4 id="初始化"><a href="#初始化" class="header-anchor">#</a> 初始化</h4> <p>简单来讲就是cli内置一个template,可以选择是多个固定的，也可以单个通过init阶段配合选择项来动态生成个性化的初始模版，技术方案：inquirer + ejs或mustache</p> <p>示例代码：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">try</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> answers <span class="token operator">=</span> <span class="token keyword">await</span> inquirer<span class="token punctuation">.</span><span class="token function">prompt</span><span class="token punctuation">(</span>questions<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">const</span> <span class="token punctuation">{</span> projectName<span class="token punctuation">,</span> platform<span class="token punctuation">,</span> framework<span class="token punctuation">,</span> attributes<span class="token punctuation">,</span> bu<span class="token punctuation">,</span> site <span class="token punctuation">}</span> <span class="token operator">=</span> answers<span class="token punctuation">;</span>
+
+    <span class="token keyword">const</span> templateRoot <span class="token operator">=</span> path<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">'./boilerplate'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">const</span> projectPath <span class="token operator">=</span> path<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span>cwd<span class="token punctuation">,</span> projectName<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">await</span> fse<span class="token punctuation">.</span><span class="token function">copySync</span><span class="token punctuation">(</span>templateRoot<span class="token punctuation">,</span> projectPath<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+      <span class="token function-variable function">filter</span><span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token parameter">file</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token keyword">const</span> reg <span class="token operator">=</span> <span class="token regex">/\.(tpl|ejs)$/ig</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>reg<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span>file<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">const</span> code <span class="token operator">=</span> fse<span class="token punctuation">.</span><span class="token function">readFileSync</span><span class="token punctuation">(</span>path<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span>templateRoot<span class="token punctuation">,</span> <span class="token string">'config.ejs'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+      encoding<span class="token punctuation">:</span> <span class="token string">'utf8'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">await</span> fse<span class="token punctuation">.</span><span class="token function">writeFileSync</span><span class="token punctuation">(</span>
+      path<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span>projectPath<span class="token punctuation">,</span> <span class="token string">'config.js'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      ejs<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span>
+        code<span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          projectName<span class="token punctuation">,</span>
+          platform<span class="token punctuation">,</span>
+          framework<span class="token punctuation">,</span>
+          attributes<span class="token punctuation">,</span>
+          bu<span class="token punctuation">,</span>
+          site<span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">)</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        encoding<span class="token punctuation">:</span> <span class="token string">'utf8'</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    signale<span class="token punctuation">.</span><span class="token function">success</span><span class="token punctuation">(</span>chalk<span class="token punctuation">.</span><span class="token function">cyan</span><span class="token punctuation">(</span><span class="token string">'创建项目成功！'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    signale<span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span>chalk<span class="token punctuation">.</span><span class="token function">cyan</span><span class="token punctuation">(</span><span class="token string">'npm run dev 开始工作吧!！😝'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span>error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    signale<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="构建"><a href="#构建" class="header-anchor">#</a> 构建</h4> <p>脚手架中构建功能使用的是webpack，为了快速实现，所以直接采用并二次封装了umi内部的af-webpack的配置方案👍，当执行脚手架构建命令时，将本地的配置的相关参数透传给af-webpack即可，基本上一路绿灯。</p> <ul><li>配置多入口</li></ul> <div class="language-js extra-class"><pre class="language-js"><code>  entry<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token string">'docs'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
+      webpackHotDevClientPath<span class="token punctuation">,</span> <span class="token comment">// 开发态hmr</span>
+      path<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span>paths<span class="token punctuation">.</span>absTmpDirPath<span class="token punctuation">,</span> <span class="token string">'./docs/index.js'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">'preview'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
+      webpackHotDevClientPath<span class="token punctuation">,</span>
+      path<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span>paths<span class="token punctuation">.</span>absTmpDirPath<span class="token punctuation">,</span> <span class="token string">'./preview/index.js'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><ul><li>markdown解析</li></ul> <p>为了将markdown也当成一个组件输出，保留正常markdown-loader的功能，稍微定制化一下loader，这样可以直接将front-matter配置的信息呈现在页面上，如下：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">transformToComponent</span><span class="token punctuation">(</span><span class="token parameter">content<span class="token punctuation">,</span> fm</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> <span class="token punctuation">{</span> attributes <span class="token punctuation">}</span> <span class="token operator">=</span> fm<span class="token punctuation">;</span>
+  <span class="token keyword">return</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+    import React, { Component, Fragment } from 'react';
+
+    export default class extends Component {
+
+      state = {
+        html: '</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token function">escape</span><span class="token punctuation">(</span>content<span class="token punctuation">)</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">',
+        attr: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>attributes<span class="token punctuation">)</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">,
+      }
+
+      render() {
+        const { html, attr } = this.state;
+        const { platform, framework, attributes } = attr;
+        return (
+          &lt;Fragment&gt;
+            {/*&lt;section&gt;
+              &lt;blockquote&gt;
+                &lt;ul&gt;
+                  {platform &amp;&amp; &lt;li&gt;Platform: {platform}&lt;/li&gt;}
+                  {framework &amp;&amp; &lt;li&gt;Framework: {framework}&lt;/li&gt;}
+                  {attributes &amp;&amp; &lt;li&gt;Attributes: {attributes}&lt;/li&gt;}
+                &lt;/ul&gt;
+              &lt;/blockquote&gt;
+            &lt;/section&gt;*/}
+            &lt;section dangerouslySetInnerHTML={{ __html: unescape(html) }} /&gt;
+          &lt;/Fragment&gt;
+        )
+      }
+    }
+  </span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><h4 id="发布"><a href="#发布" class="header-anchor">#</a> 发布</h4> <p>todo...</p> <h3 id="约定配置文件，-示例："><a href="#约定配置文件，-示例：" class="header-anchor">#</a> 约定配置文件， 示例：</h3> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  header<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    logo<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      image<span class="token punctuation">:</span> <span class="token string">'https://www.baidu.com'</span><span class="token punctuation">,</span>
+      title<span class="token punctuation">:</span> <span class="token string">'YufPress'</span><span class="token punctuation">,</span>
+      href<span class="token punctuation">:</span> <span class="token string">'#/'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">// siderBar即route，会解析成react-router的子route</span>
+  sideBar<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    name<span class="token punctuation">:</span> <span class="token string">'UI'</span><span class="token punctuation">,</span>
+    groups<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        groupName<span class="token punctuation">:</span> <span class="token string">'基础组件'</span><span class="token punctuation">,</span>
+        list<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+          <span class="token punctuation">{</span>
+            disabled<span class="token punctuation">:</span>  <span class="token boolean">false</span><span class="token punctuation">,</span>
+            enablePreview<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// 是否开启预览</span>
+            path<span class="token punctuation">:</span> <span class="token string">'/Alert'</span><span class="token punctuation">,</span> <span class="token comment">// 路径（即docs文件夹下的路径</span>
+            title<span class="token punctuation">:</span> <span class="token string">'Alert'</span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">]</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+</code></pre></div><p>构建时处理方式，示例代码如下：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 收集文件</span>
+<span class="token keyword">const</span> docsMap <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> req <span class="token operator">=</span> require<span class="token punctuation">.</span><span class="token function">context</span><span class="token punctuation">(</span><span class="token string">'@root/docs'</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token regex">/\.md$/</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+req<span class="token punctuation">.</span><span class="token function">keys</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">key</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  docsMap<span class="token punctuation">[</span>key<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">req</span><span class="token punctuation">(</span>key<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 生成route</span>
+
+<span class="token keyword">import</span> <span class="token punctuation">{</span> sideBar <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@root/config'</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> routes <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment">// 传给react-router生成路由</span>
+
+sideBar<span class="token punctuation">.</span>groups<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">group</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  group<span class="token punctuation">.</span>list<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">page</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token function">addRoute</span><span class="token punctuation">(</span>page<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+<span class="token comment">// addRoute</span>
+
+<span class="token keyword">function</span> <span class="token function">addRoute</span><span class="token punctuation">(</span><span class="token parameter">page</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> <span class="token punctuation">{</span> path<span class="token punctuation">,</span> title<span class="token punctuation">,</span> disabled <span class="token operator">=</span> <span class="token boolean">false</span> <span class="token punctuation">}</span> <span class="token operator">=</span> page<span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>path<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 兼容处理</span>
+    <span class="token keyword">const</span> module <span class="token operator">=</span>
+      componentMap<span class="token punctuation">[</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">.</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>path<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">/readme.md</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">]</span> <span class="token operator">||</span>
+      componentMap<span class="token punctuation">[</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">.</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>path<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">/README.md</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">]</span> <span class="token operator">||</span>
+      componentMap<span class="token punctuation">[</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">.</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>path<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">.md</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">]</span> <span class="token operator">||</span>
+      <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>disabled<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      routes<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        component<span class="token punctuation">:</span> module<span class="token punctuation">.</span>default <span class="token operator">||</span> None<span class="token punctuation">,</span>
+        name<span class="token punctuation">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>path<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+        path<span class="token punctuation">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">/</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>path<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+        title<span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><p><strong>同理，处理预览组件(.(j|t)sx?)这样的文件的方式一样</strong></p> <h2 id="总结"><a href="#总结" class="header-anchor">#</a> 总结</h2> <p>开始陷入思考，我为什么要写这个？好像没啥好写的。下篇准备写我是如何在此基础上实现插件机制的。</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/leetcode/hard/solveNQueens.html" class="prev">N皇后</a></span> <span class="next"><a href="/blog/shared/js/继承.html">javascript的继承</a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><SWUpdatePopup></SWUpdatePopup></div></div>
+    <script src="/blog/assets/js/app.ff60ca48.js" defer></script><script src="/blog/assets/js/2.ec312a92.js" defer></script><script src="/blog/assets/js/5.53ee2f3f.js" defer></script>
+  </body>
+</html>
