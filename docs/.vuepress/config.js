@@ -71,11 +71,13 @@ module.exports = {
     ['meta', { name: 'msapplication-TileImage', content: '/icons/fruits.svg' }],
     ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
   ],
-  plugins: ['@vuepress/pwa', {
-    serviceWorker: true,
-    updatePopup: {
-      message: "New content is available.",
-      buttonText: "Refresh"
-    }
-  }],
+  plugins: [
+    ['@vuepress/pwa', {
+      serviceWorker: true,
+      updatePopup: {
+        message: "发现新内容可用",
+        buttonText: "刷新"
+      }
+    }],
+  ],
 };
