@@ -63,14 +63,14 @@ module.exports = {
   head: [
     ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no,viewport-fit=cover' }],
     ['meta', { name: 'format-detection', content: 'telephone=no' }],
-    ['link', { rel: 'icon', href: '/icons/fruits.svg' }],
+    ['link', { rel: 'icon', href: '/icons/icon.png' }],
     ['link', { rel: 'manifest', href: '/manifest.json' }],
     ['meta', { name: 'theme-color', content: '#F3F3F3' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'default' }],
-    ['link', { rel: 'apple-touch-icon', href: '//h5.sinaimg.cn/m/weibo-lite/appicon.png' }],
-    ['link', { rel: 'mask-icon', href: '//h5.sinaimg.cn/m/weibo-lite/mask-icon.svg', color: '#F3F3F3' }],
-    ['meta', { name: 'msapplication-TileImage', content: '//h5.sinaimg.cn/m/weibo-lite/appicon.png' }],
+    ['link', { rel: 'apple-touch-icon', href: '/icons/icon.png' }],
+    ['link', { rel: 'mask-icon', href: 'https://h5.sinaimg.cn/m/weibo-lite/mask-icon.svg', color: '#F3F3F3' }],
+    ['meta', { name: 'msapplication-TileImage', content: '/icons/icon.png' }],
     ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
   ],
   plugins: [
