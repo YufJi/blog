@@ -61,14 +61,16 @@ module.exports = {
     ],
   },
   head: [
+    ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no,viewport-fit=cover' }],
+    ['meta', { name: 'format-detection', content: 'telephone=no' }]
     ['link', { rel: 'icon', href: '/icons/fruits.svg' }],
     ['link', { rel: 'manifest', href: '/manifest.json' }],
-    ['meta', { name: 'theme-color', content: '#3eaf7c' }],
-    ['meta', { name: 'apple-mobile-web-app-capable', content: 'no' }],
-    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black-translucent' }],
-    ['link', { rel: 'apple-touch-icon', href: '/icons/fruits.svg' }],
-    ['link', { rel: 'mask-icon', href: '/icons/fruits.svg', color: '#3eaf7c' }],
-    ['meta', { name: 'msapplication-TileImage', content: '/icons/fruits.svg' }],
+    ['meta', { name: 'theme-color', content: '#F3F3F3' }],
+    ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
+    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'default' }],
+    ['link', { rel: 'apple-touch-icon', href: '//h5.sinaimg.cn/m/weibo-lite/appicon.png' }],
+    ['link', { rel: 'mask-icon', href: '//h5.sinaimg.cn/m/weibo-lite/mask-icon.svg', color: '#F3F3F3' }],
+    ['meta', { name: 'msapplication-TileImage', content: '//h5.sinaimg.cn/m/weibo-lite/appicon.png' }],
     ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
   ],
   plugins: [
