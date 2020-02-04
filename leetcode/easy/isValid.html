@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>20. 有效的括号 | YufJ&#39;s Blog</title>
+    <meta name="description" content="记录自己的刷题之旅和分享">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,viewport-fit=cover">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="icon" href="/blog/icons/icon.png">
+  <link rel="manifest" href="/blog/manifest.json">
+  <meta name="theme-color" content="#F3F3F3">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="apple-touch-icon" href="/blog/icons/icon.png">
+  <meta name="msapplication-TileImage" content="/icons/icon.png">
+  <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.22fb32f6.css" as="style"><link rel="preload" href="/blog/assets/js/app.4cd7d11a.js" as="script"><link rel="preload" href="/blog/assets/js/2.3185b5b6.js" as="script"><link rel="preload" href="/blog/assets/js/13.4d57fc0a.js" as="script"><link rel="preload" href="/blog/assets/js/3.1f4717a5.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.904fafdb.js"><link rel="prefetch" href="/blog/assets/js/11.900d5924.js"><link rel="prefetch" href="/blog/assets/js/12.e03d7175.js"><link rel="prefetch" href="/blog/assets/js/14.f0750315.js"><link rel="prefetch" href="/blog/assets/js/15.68be2cde.js"><link rel="prefetch" href="/blog/assets/js/16.e69bd2c3.js"><link rel="prefetch" href="/blog/assets/js/17.dc59d94d.js"><link rel="prefetch" href="/blog/assets/js/18.640c697d.js"><link rel="prefetch" href="/blog/assets/js/19.6200a5a9.js"><link rel="prefetch" href="/blog/assets/js/20.f957f8c8.js"><link rel="prefetch" href="/blog/assets/js/21.79faee42.js"><link rel="prefetch" href="/blog/assets/js/22.4a50b5a6.js"><link rel="prefetch" href="/blog/assets/js/23.ec281396.js"><link rel="prefetch" href="/blog/assets/js/24.f577616e.js"><link rel="prefetch" href="/blog/assets/js/25.75b7c962.js"><link rel="prefetch" href="/blog/assets/js/26.4876572b.js"><link rel="prefetch" href="/blog/assets/js/27.f797d5af.js"><link rel="prefetch" href="/blog/assets/js/28.87f88a41.js"><link rel="prefetch" href="/blog/assets/js/29.c1ba4be8.js"><link rel="prefetch" href="/blog/assets/js/30.5d514959.js"><link rel="prefetch" href="/blog/assets/js/31.16f49bcd.js"><link rel="prefetch" href="/blog/assets/js/32.dd7071ec.js"><link rel="prefetch" href="/blog/assets/js/33.bad45a37.js"><link rel="prefetch" href="/blog/assets/js/4.dce469fd.js"><link rel="prefetch" href="/blog/assets/js/5.b202549a.js"><link rel="prefetch" href="/blog/assets/js/6.d83ba3b1.js"><link rel="prefetch" href="/blog/assets/js/7.ff7117de.js"><link rel="prefetch" href="/blog/assets/js/8.51e4e9de.js"><link rel="prefetch" href="/blog/assets/js/9.10c4fef5.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.22fb32f6.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><!----> <span class="site-name">YufJ's Blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>LeetCode</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading open"><span>简单</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/leetcode/easy/binarySearch.html" class="sidebar-link">704. 二分查找</a></li><li><a href="/blog/leetcode/easy/distributeCandies.html" class="sidebar-link">575. 分糖果</a></li><li><a href="/blog/leetcode/easy/findContentChildren.html" class="sidebar-link">455. 分发饼干</a></li><li><a href="/blog/leetcode/easy/isSymmetric.html" class="sidebar-link">101. 对称二叉树</a></li><li><a href="/blog/leetcode/easy/isValid.html" class="active sidebar-link">20. 有效的括号</a></li><li><a href="/blog/leetcode/easy/longestCommonPrefix.html" class="sidebar-link">14. 最长公共前缀</a></li><li><a href="/blog/leetcode/easy/reverse.html" class="sidebar-link">7. 整数反转</a></li><li><a href="/blog/leetcode/easy/searchInsert.html" class="sidebar-link">35. 搜索插入位置</a></li><li><a href="/blog/leetcode/easy/twoSum.html" class="sidebar-link">1. 两数之和</a></li></ul></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>中等</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>困难</span> <span class="arrow right"></span></p> <!----></section></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>前端知识</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading open"><span>实践</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/shared/practice/实现组件文档工具.html" class="sidebar-link">实现一个简易React UI组件文档小工具</a></li></ul></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>js</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>css</span> <span class="arrow right"></span></p> <!----></section></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="_20-有效的括号"><a href="#_20-有效的括号" class="header-anchor">#</a> 20. 有效的括号</h1> <p>给定一个只包括 '('，')'，'{'，'}'，'['，']' 的字符串，判断字符串是否有效。</p> <p>有效字符串需满足：</p> <p>左括号必须用相同类型的右括号闭合。
+左括号必须以正确的顺序闭合。
+注意空字符串可被认为是有效字符串。</p> <p>示例 1:</p> <div class="language- extra-class"><pre class="language-text"><code>输入: &quot;()&quot;
+输出: true
+</code></pre></div><p>示例 2:</p> <div class="language- extra-class"><pre class="language-text"><code>输入: &quot;()[]{}&quot;
+输出: true
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code>
+<span class="token keyword">function</span> <span class="token function">isValid</span><span class="token punctuation">(</span>str <span class="token operator">=</span> <span class="token string">''</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> stack <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> types <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token string">')'</span><span class="token punctuation">:</span> <span class="token string">'('</span><span class="token punctuation">,</span>
+    <span class="token string">']'</span><span class="token punctuation">:</span> <span class="token string">'['</span><span class="token punctuation">,</span>
+    <span class="token string">'}'</span><span class="token punctuation">:</span> <span class="token string">'{'</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> str<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>stack<span class="token punctuation">.</span>length <span class="token operator">&amp;&amp;</span> types<span class="token punctuation">[</span>str<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">===</span> stack<span class="token punctuation">[</span>stack<span class="token punctuation">.</span>length <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      stack<span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      stack<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>str<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">return</span> stack<span class="token punctuation">.</span>length <span class="token operator">===</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+
+<span class="token keyword">const</span> str <span class="token operator">=</span> <span class="token string">'({[(]})'</span><span class="token punctuation">;</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">isValid</span><span class="token punctuation">(</span>str<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>总结： 这类问题的思路最快想到录的就是栈 后入先出， 起初遍历用的while发现执行效率太低了，改成for就好了很多了，这块需要查点资料看看。</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/leetcode/easy/isSymmetric.html" class="prev">101. 对称二叉树</a></span> <span class="next"><a href="/blog/leetcode/easy/longestCommonPrefix.html">14. 最长公共前缀</a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/blog/assets/js/app.4cd7d11a.js" defer></script><script src="/blog/assets/js/2.3185b5b6.js" defer></script><script src="/blog/assets/js/13.4d57fc0a.js" defer></script><script src="/blog/assets/js/3.1f4717a5.js" defer></script>
+  </body>
+</html>
