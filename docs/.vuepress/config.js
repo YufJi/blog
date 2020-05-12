@@ -7,7 +7,7 @@ const cwd = process.cwd()
 
 module.exports = {
   base: '/blog/',
-  title: "YufJ's Blog",
+  title: "YufJ's Daily",
   description: '记录自己的刷题之旅和分享',
   dest: 'dist',
   themeConfig: {
@@ -38,8 +38,14 @@ module.exports = {
         ]
       },
       {
+        title: '设计模式',
+        collapsable: false,
+        children: listDirectory(path.join(__dirname, '../Design pattern')).filter(f => f.type === 'file').map(item => `/Design pattern/${item.fileName}`)
+      },
+      {
         title: '前端知识',
         collapsable: false,
+        sidebarDepth: 0,
         children: [
             {
             title: '实践',
@@ -57,7 +63,7 @@ module.exports = {
             children: listDirectory(path.join(__dirname, '../shared/css')).filter(f => f.type === 'file').map(item => `/shared/css/${item.fileName}`)
           }
         ]
-      }
+      },
     ],
   },
   head: [
