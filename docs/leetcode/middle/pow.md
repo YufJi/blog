@@ -30,25 +30,33 @@ n 是 32 位有符号整数，其数值范围是 [−231, 231 − 1] 。
  * @return {number}
  */
 
-function fastPow(x, n) {
-  if (n === 0 ) return 1;
-  const half = fastPow(x, ~~(n/2));
-  if (n%2 === 0) {
-    return half * half;
-  } else {
-    return half * half * x;
-  }
-}
-
-var myPow = function(x, n) {
-  let res = 1;
-  if (n < 0) {
-    x = 1/x;
-    n = -1 * n
+const myPow1 = function(x, n) { // 递归
+  function quickMul(N) {
+    if (N === 0) return 1;
+    const half = quickMul(Math.floor(N/2));
+    return N%2 === 0 ? half * half : half * half * x;
   }
 
-  return fastPow(x, n)
+  return n < 0 ? 1/quickMul(-1 * n) : quickMul(n);
 };
+
+const myPow2 = function(x, n) { // 迭代
+  function quickMul(N) {
+    if (N === 0) return 1;
+    let result = 1;
+    let temp = x;
+    while (N > 0) {
+      if (N%2 === 1) {
+        result *= temp;
+      }
+      temp *= temp;
+      N = Math.floor(N/2)
+    }
+    return result;
+  }
+
+  return n < 0 ? 1/quickMul(-1 * n) : quickMul(n);
+}
 
 
 ```

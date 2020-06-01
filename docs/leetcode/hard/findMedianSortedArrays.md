@@ -28,52 +28,35 @@ nums2 = [3, 4]
  * @param {number[]} nums2
  * @return {number}
  */
-var findMedianSortedArrays = function(nums1, nums2) {
+
+const findMedianSortedArrays = (nums1 = [], nums2 = []) => {
   let m = nums1.length;
   let n = nums2.length;
-  if (n < m) {
-      [nums1, nums2, m, n] = [nums2, nums1, n, m];
+  if (m > n) {
+    [nums1, m, nums2, n] = [nums2, n, nums1, m];
   }
-  const flag = (m + n)%2 === 0;
-  let imin = 0;
-  let imax = m;
-  let maxLeft, minRight;
-  while(imin <= imax) {
-      const i = Math.floor((imin + imax)/2);
-      const j = flag ? (m+n)/2 - i : (m+n+1)/2 - i;
-      if (i < m && nums2[j-1] > nums1[i]) {
-          imin = i + 1
-      }
-      else if (0 < i && nums1[i-1] > nums2[j]) {
-          imax = i - 1;
-      }
-      else {
-          if (i === 0) {
-              maxLeft = nums2[j-1]
-          }
-          else if (j === 0) {
-              maxLeft = nums1[i-1]
-          }
-          else {
-              maxLeft = Math.max(nums1[i-1], nums2[j-1])
-          }
 
-          if (!flag) {
-              return maxLeft;
-          }
+  const totalCount = Math.floor((m + n + 1)/2);
+  
+  let left = 0;
+  let right = m;
 
-          if (i === m) {
-              minRight = nums2[j]
-          }
-          else if (j === n) {
-              minRight = nums1[i]
-          }
-          else {
-              minRight = Math.min(nums1[i], nums2[j])
-          }
+  while (left <= right) {
+    const i = Math.floor((left + right) / 2);
+    const j = totalCount - i;
 
-          return (maxLeft + minRight)/2;
-      }
+    const num1LeftMax = i === 0 ? -Infinity : nums1[i - 1];
+    const num1RightMin = i === m ? Infinity : nums1[i];
+    const num2leftMax = j === 0 ? -Infinity : nums2[j - 1];
+    const num2RightMin = j === n ? Infinity : nums2[j];
+
+    if (num1LeftMax <= num2RightMin && num2leftMax <= num1RightMin) {
+      return (m + n)%2 === 1 ? Math.max(num1LeftMax, num2leftMax) : (Math.max(num1LeftMax, num2leftMax) + Math.min(num1RightMin, num2RightMin))/2;
+    } else if (num1LeftMax > num2RightMin) { // [left, i-1]
+      right = i - 1;
+    } else { // [i+1, right]
+      left = i + 1;
+    }
   }
-};
+}
 ```
