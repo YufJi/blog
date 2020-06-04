@@ -38,4 +38,6 @@ const board = [
 
 const word = 'bde';
 
+console.time('exist')
 console.log(exist(board, word))
+console.timeEnd('exist')
