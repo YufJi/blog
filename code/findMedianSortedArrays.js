@@ -35,7 +35,7 @@ const searchInsert = (nums, target) => {
   while (low <= high) {
     const mid = Math.floor((low + high)/2);
     const guess = nums[mid];
-    if (target > guess) { 
+    if (target > guess) {
       low = mid + 1;
     } else if (target < guess) {
       high = mid - 1
@@ -84,7 +84,7 @@ const findMedianSortedArrays = (nums1 = [], nums2 = []) => {
   }
 
   const totalCount = Math.floor((m + n + 1)/2);
-  
+
   let left = 0;
   let right = m;
 

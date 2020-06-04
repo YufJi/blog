@@ -1,8 +1,9 @@
-
+// 动态规划
+// 斐波那契数列
 
 const fib = (n) => {
-  const dp = []
-  const m = 1000000007
+  const dp = [];
+  const m = 1000000007;
 
   dp[0] = 0;
   dp[1] = 1;
@@ -11,5 +12,5 @@ const fib = (n) => {
     dp[i] = (dp[i - 1] + dp[i - 2])%m;
   }
 
-  return dp[n]
+  return dp[n];
 }

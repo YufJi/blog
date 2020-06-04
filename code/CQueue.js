@@ -14,6 +14,15 @@ CQueue.prototype.appendTail = function(value) {
 };
 
 /**
+ * @param {number} value
+ * @return {void}
+ */
+CQueue.prototype.appendHead = function(value) {
+  this.B.push(value)
+  this.size+=1
+};
+
+/**
  * @return {number}
  */
 CQueue.prototype.deleteHead = function() {
@@ -29,6 +38,23 @@ CQueue.prototype.deleteHead = function() {
   this.size-=1;
 
   return this.B.pop();
+};
+
+/**
+ * @return {number}
+ */
+CQueue.prototype.deleteTail = function() {
+  if(this.size === 0) {
+    return -1;
+  }
+
+  this.size-=1;
+
+  if (this.A.length) {
+    return this.A.pop;
+  } else if (this.B.length) {
+    return this.B.shift();
+  }
 };
 
 // a []

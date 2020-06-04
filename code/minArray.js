@@ -18,3 +18,4 @@ const minArray = (numbers) => {
 
   return numbers[low];
 }
+
