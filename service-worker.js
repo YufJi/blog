@@ -27,7 +27,7 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "e3a9cf9fbe1ad1a107635085354a7a90"
+    "revision": "c1bef880f2589a346f3ad0acfe29ee33"
   },
   {
     "url": "assets/css/0.styles.f5581cdf.css",
@@ -138,92 +138,96 @@ self.__precacheManifest = [
     "revision": "0233f83b5abd7bf1b3ec1f2fc8327e3e"
   },
   {
-    "url": "assets/js/32.c26f6744.js",
-    "revision": "c0bf9cb2b612c09528c9342bfbbf9434"
+    "url": "assets/js/32.10865b0b.js",
+    "revision": "30a2379b879ad95b0aef1dce914ec1a4"
   },
   {
-    "url": "assets/js/33.393c42f7.js",
-    "revision": "75a7d896df4848a17b58799e42a397aa"
+    "url": "assets/js/33.8c64a732.js",
+    "revision": "f4d3d4a2c5a2d1aeeabe6c5ef4fc27a1"
   },
   {
-    "url": "assets/js/34.5107a48f.js",
-    "revision": "d38b8fa5e2f5a9681aa92022d2a586ae"
+    "url": "assets/js/34.752c38f2.js",
+    "revision": "f8968841d21ae85b452ffe7509bd0c65"
   },
   {
-    "url": "assets/js/35.c3001e62.js",
-    "revision": "7f5cad506e39c4bee742e66e0b8963ad"
+    "url": "assets/js/35.354f3cff.js",
+    "revision": "5cec3032d4b123055fd86dcc7eee489f"
   },
   {
-    "url": "assets/js/36.6c84e831.js",
-    "revision": "57f28577ff8424758106d35540e394f2"
+    "url": "assets/js/36.48dff6dd.js",
+    "revision": "23a429565ab77a6ca43bacdb4fc1057d"
   },
   {
-    "url": "assets/js/37.8b8281f3.js",
-    "revision": "ce7af66fdbbb9d85f9b98f24ab21d5a4"
+    "url": "assets/js/37.de034af2.js",
+    "revision": "7113d50df2b66e40a9550b74b346cb2d"
   },
   {
-    "url": "assets/js/38.6d7a3751.js",
-    "revision": "f43c40fc5afe7582ec15c632cb9220e7"
+    "url": "assets/js/38.0ccb32b7.js",
+    "revision": "3092922ed4648e17c945e2ada810acc9"
   },
   {
-    "url": "assets/js/39.8e3418ef.js",
-    "revision": "e5aa0d3328e7decd6be0d4ac21681ff2"
+    "url": "assets/js/39.5dbab012.js",
+    "revision": "e88361d9a97a5e9add8259aeca31345a"
   },
   {
-    "url": "assets/js/4.62e342d3.js",
-    "revision": "51a230b2cf831ded5b077cde0e7c2657"
+    "url": "assets/js/4.cf6f3b93.js",
+    "revision": "7412aec6cd6b18d26fc7357ea250b59e"
   },
   {
-    "url": "assets/js/40.755bc589.js",
-    "revision": "34b9721d0eeada1af5ebfcb294574c89"
+    "url": "assets/js/40.73b13de4.js",
+    "revision": "9ef652ad39725a0d4222bb463d850e17"
   },
   {
-    "url": "assets/js/41.8ac65311.js",
-    "revision": "60d679ab1a0a7162b164c4b6b6f3ff36"
+    "url": "assets/js/41.dd4ff95b.js",
+    "revision": "8783c603ad90762b47377545286d876d"
   },
   {
-    "url": "assets/js/42.832b258b.js",
-    "revision": "ef284a2e359e7918cfd5c2fae1474af2"
+    "url": "assets/js/42.2b0d560e.js",
+    "revision": "51c75e6c86a9f1f35215ed8b191a65f3"
   },
   {
-    "url": "assets/js/43.63a0dc73.js",
-    "revision": "970c589f1eeae462c306465d5b2aab2d"
+    "url": "assets/js/43.ac56bffb.js",
+    "revision": "65592b9f56c86fe5a3e73d87fe545d18"
   },
   {
-    "url": "assets/js/44.e6afc5cf.js",
-    "revision": "bd341e4afcea4c912cddfacadf4fce50"
+    "url": "assets/js/44.3d19721b.js",
+    "revision": "125a1a9f7c28c66513f9b4aaba5e3bb5"
+  },
+  {
+    "url": "assets/js/45.28dd28c2.js",
+    "revision": "cc5af19e95e1e5b14244cd92a9535225"
   },
   {
     "url": "assets/js/5.f56acf8e.js",
     "revision": "fbc7ebbc17c9710aba44ff7221a58729"
   },
   {
-    "url": "assets/js/6.b65b70b4.js",
-    "revision": "9247e1d6330229c364b2ee1bd9413c83"
+    "url": "assets/js/6.9c21cf9f.js",
+    "revision": "dadf6eb89dd1ce6e6aa1daaf8a37e611"
   },
   {
-    "url": "assets/js/7.948f0834.js",
-    "revision": "0b4bdb1c719469e4376734c7e1a1e747"
+    "url": "assets/js/7.bbdf566a.js",
+    "revision": "cdbbd51c3f8367c951ba9a3fbb659724"
   },
   {
-    "url": "assets/js/8.3154bfc2.js",
-    "revision": "c666110f52c93e49778e6c23378d8032"
+    "url": "assets/js/8.3193148f.js",
+    "revision": "b15ea00512c48cefae53d0175d2e4658"
   },
   {
     "url": "assets/js/9.870f8f58.js",
     "revision": "1493e3406507750d4a34fabefbd31b94"
   },
   {
-    "url": "assets/js/app.7247dbc8.js",
-    "revision": "12dc9d877fe49c48b1ace1d80ec0b1f2"
+    "url": "assets/js/app.f6b25795.js",
+    "revision": "64f1b33fcd6845557429510fd3e29746"
   },
   {
     "url": "Design pattern/封装.html",
-    "revision": "c63992221110e56fedae6d53d0dad9d4"
+    "revision": "9fc42e89cf538946d55c5b2ce0d87047"
   },
   {
     "url": "Design pattern/继承.html",
-    "revision": "966ba8d289eef010acb1c2cc011b671c"
+    "revision": "e378a5fb7e5fe29bb36b05e6b1a3e173"
   },
   {
     "url": "icons/icon.png",
@@ -231,143 +235,147 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "7fa15acef5d74b1f88323d8a092944a4"
+    "revision": "617cf6989699e8ac70af75875073f8bf"
   },
   {
     "url": "leetcode/easy/binarySearch.html",
-    "revision": "3f3ac01c235669051f2860ad95cb3590"
+    "revision": "6ccaf707dcc6bedbb2d1c092a2761042"
   },
   {
     "url": "leetcode/easy/distributeCandies.html",
-    "revision": "3785fb4d5405497f5bee0fb5fdc5801b"
+    "revision": "f51c92d7810e7fb8b7de56ed047714bb"
   },
   {
     "url": "leetcode/easy/findContentChildren.html",
-    "revision": "67a3ceac0a9e4a1b1ddc5b3c84f32c79"
+    "revision": "614bffb5d25146f869a703c26da1e2c1"
   },
   {
     "url": "leetcode/easy/isSymmetric.html",
-    "revision": "4c82541617b7bf9e927e9d5dd0959b43"
+    "revision": "3b415b7012c92e7538ce34c119aee037"
   },
   {
     "url": "leetcode/easy/isValid.html",
-    "revision": "19ef1afb58d6179c8d8219cf7252c7ce"
+    "revision": "9e3fa057ef374b8b602eaa3fafb4cc23"
   },
   {
     "url": "leetcode/easy/longestCommonPrefix.html",
-    "revision": "3a5d63e323746f82509f7ee07f45ab07"
+    "revision": "635b1d2c05245fc768a77d8bedfc92eb"
   },
   {
     "url": "leetcode/easy/mergeTwoLists.html",
-    "revision": "c0fffe7bf7eb1aa6d3cc83f8b2ad8127"
+    "revision": "705ad3d61f08003e1260243c8507c3e3"
   },
   {
     "url": "leetcode/easy/removeElement.html",
-    "revision": "339869f14f753f27f86ce0cc0f2b66ee"
+    "revision": "878fa21b253c0d0d95532d863b7f34b7"
   },
   {
     "url": "leetcode/easy/reverse.html",
-    "revision": "1e326a3b0fced30789f7602bf9267280"
+    "revision": "5e1fc9608317247cdae665582de0c7a0"
   },
   {
     "url": "leetcode/easy/searchInsert.html",
-    "revision": "de6b7e576a5993ab7d267c69b5b0227d"
+    "revision": "4bae2018fd9dfc5098310a12bddacf43"
   },
   {
     "url": "leetcode/easy/strStr.html",
-    "revision": "223336ab7b05e4f1720e53860b0a7616"
+    "revision": "342aa3eff78f81887baf322ae69ac733"
   },
   {
     "url": "leetcode/easy/twoSum.html",
-    "revision": "62fe2125e4c778c29d97c3ccc4828e13"
+    "revision": "2cbfd1e539c4ce7f4dcee5b282089a5e"
   },
   {
     "url": "leetcode/easy/waysToStep.html",
-    "revision": "71b836f0aeb30d3b2a83aa80b6af62fa"
+    "revision": "1c6186db609bcc8b6dc52d1d08bb7f54"
   },
   {
     "url": "leetcode/hard/findMedianSortedArrays.html",
-    "revision": "f39058445abe22eb5c2b99a6bf49e52a"
+    "revision": "7c430db5eb6d09b1677e89297f4b63bd"
   },
   {
     "url": "leetcode/hard/firstMissingPositive.html",
-    "revision": "773647dd81725ba1215fdf8c6e0fcc32"
+    "revision": "a21e2382a97acbe5808ccb9cfe7b4d0b"
   },
   {
     "url": "leetcode/hard/minWindow.html",
-    "revision": "f29da9cf9b61740b9a328b501a7bdcfa"
+    "revision": "920896e066c6d25ec5d35531de68867e"
   },
   {
     "url": "leetcode/hard/solveNQueens.html",
-    "revision": "af1bb8c49de022bbcb78f363f3b9a68b"
+    "revision": "25337b75e68a9337b2fcd4a699c20d51"
   },
   {
     "url": "leetcode/middle/addTwoNumbers.html",
-    "revision": "373083b00145a264e10415fe9449889b"
+    "revision": "2da178b0f44eee0a3b7ee0dcd7ab47b4"
   },
   {
     "url": "leetcode/middle/carPooling.html",
-    "revision": "8b1efe3e020a3e146b9817de037c2393"
+    "revision": "1dcce1d4105a687909ed12d080c3e0ec"
   },
   {
     "url": "leetcode/middle/combine.html",
-    "revision": "0938d37286da0d9b7e8b53572ced52cd"
+    "revision": "43186c31202b53986e8d08f8875b8fc6"
+  },
+  {
+    "url": "leetcode/middle/convert.html",
+    "revision": "b3164e9648d587c5c9b823e08307f5a2"
   },
   {
     "url": "leetcode/middle/findMinArrowShots.html",
-    "revision": "270fa7b2cbee32f03ac1dd5064bb7a46"
+    "revision": "a7c330e5673247cf4f0af9be4cd35dde"
   },
   {
     "url": "leetcode/middle/generateParenthesis.html",
-    "revision": "b97d81bee07f128444bfd76b54675e58"
+    "revision": "e4fb713e165ee542a6f9f3f1f3ebb89e"
   },
   {
     "url": "leetcode/middle/lengthOfLongestSubstring.html",
-    "revision": "16bbaccceec7a12a7fac278ca1c8dc3d"
+    "revision": "34ae44660ecaeea195dbb51272020dd3"
   },
   {
     "url": "leetcode/middle/longestCommonSubsequence.html",
-    "revision": "b1d56a95a0ee0c6bc4f809a79ce02435"
+    "revision": "e2ae7c91e4395c8e5cccbc71ea677235"
   },
   {
     "url": "leetcode/middle/longestPalindrome.html",
-    "revision": "9942e12ae4d42d374754b00d400ab8a1"
+    "revision": "8ea3f522c0f285e1c17d22770473ea2c"
   },
   {
     "url": "leetcode/middle/numFactoredBinaryTrees.html",
-    "revision": "846ff5a99632261fd7577ec27408feeb"
+    "revision": "a1a7b013eb199ce8ceda0a9fa2a016f4"
   },
   {
     "url": "leetcode/middle/pow.html",
-    "revision": "c464412b356272594bc7e2fe4ed5db39"
+    "revision": "67f2cdbf695c58e2b586b08ab51cef25"
   },
   {
     "url": "leetcode/middle/threeSum.html",
-    "revision": "4c3d7f77b0f092bddd580736d9387cab"
+    "revision": "42ff91fd2ce5f22b95869f92a10c6d82"
   },
   {
     "url": "leetcode/middle/uniquePaths.html",
-    "revision": "78021219b50965f9a82eb454b61bd7f2"
+    "revision": "c23b22cb66b8e70908b8c96860a90573"
   },
   {
     "url": "leetcode/middle/uniquePathsWithObstacles.html",
-    "revision": "5d94a3910f105f72d8fe07b2e7575604"
+    "revision": "4263f369bfaa0764b9836a12c62e1cc9"
   },
   {
     "url": "shared/css/BFC.html",
-    "revision": "80c2ce074892e98116744c45b5f4d3cc"
+    "revision": "49ceca91e93c4a00534ba3531d514512"
   },
   {
     "url": "shared/js/babel定义.html",
-    "revision": "e33eac531c3d07949a701bc1dba7ddba"
+    "revision": "cd40e211ae65f1e884b3d5277126b07a"
   },
   {
     "url": "shared/js/继承.html",
-    "revision": "c2896cb074ee322749e35d5da6a7ec6c"
+    "revision": "0b4d051f086ebfdccb779e84c96c226f"
   },
   {
     "url": "shared/practice/实现组件文档工具.html",
-    "revision": "217ecdf15c09a42ca9e946b490f2a524"
+    "revision": "cd64e11f0df0c6d5ea3a79de882f7a80"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
