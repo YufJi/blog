@@ -35,10 +35,10 @@ function lengthOfLongestSubstring(str) {
   while (endIndex < str.length) {
     const code = str[endIndex];
 
-    const n = str.slice(startIndex, endIndex).indexOf(code)
+    const idx = str.slice(startIndex, endIndex).indexOf(code)
 
-    if (n > -1) {
-      startIndex += (n + 1)
+    if (idx > -1) {
+      startIndex += (idx + 1)
     } else {
       max = Math.max(max, endIndex - startIndex + 1)
     }
