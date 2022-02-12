@@ -40,7 +40,7 @@ module.exports = {
       {
         title: '小程序',
         collapsable: false,
-        children: listDirectory(path.join(__dirname, '../tiny')).filter(f => f.type === 'file').map(item => `/tiny/${item.fileName}`)
+        children: listDirectory(path.join(__dirname, '../Tiny')).filter(f => f.type === 'file').map(item => `/Tiny/${item.fileName}`)
       },
       // {
       //   title: '设计模式',
