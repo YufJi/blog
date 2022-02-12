@@ -1,0 +1,17 @@
+{
+  "name": "yuf's blog",
+  "short_name": "blog",
+  "start_url": "https://yufji.github.io/blog/",
+  "display": "standalone",
+  "background_color": "#F3F3F3",
+  "theme_color": "#F3F3F3",
+  "description": "Yuf's leetcode travel.",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icons/icon.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    }
+  ]
+}
