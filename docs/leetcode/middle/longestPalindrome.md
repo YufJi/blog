@@ -16,7 +16,7 @@
 ```
 
 ```js
-function longestPalindrome(s = '') { 
+function longestPalindrome(s = '') {
   if (!s || !s.trim()) return '';
   if (s.length === 1) return s;
 
@@ -33,6 +33,7 @@ function longestPalindrome(s = '') {
       end += half;
     }
   }
+
   function expandAroundCenter(s, left, right) {
       let L = left, R = right;
       while (L >= 0 && R < s.length && s[L] === s[R]) {

@@ -7,7 +7,7 @@ cache:
     - node_modules
 
 install:
-  - npm install
+  - yarn
 
 script:
   - yarn build
