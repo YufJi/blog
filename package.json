@@ -3,12 +3,9 @@
   "version": "1.0.0",
   "description": "- [重学前端（css布局)](https://github.com/YufJi/blog/blob/master/2019-01/BFC.md \"重学前端（css布局)\")   - [重学前端（js继承)](https://github.com/YufJi/blog/blob/master/2019-01/继承.md \"重学前端（js继承)\")",
   "main": "flat.js",
-  "directories": {
-    "doc": "docs"
-  },
   "scripts": {
-    "dev": "vuepress dev docs",
-    "build": "vuepress build docs"
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
   },
   "repository": {
     "type": "git",
