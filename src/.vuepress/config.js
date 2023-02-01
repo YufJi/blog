@@ -16,27 +16,27 @@ module.exports = {
     // navbar: false,
     docsDir: path.join(cwd, 'src'),
     sidebar: [
-      // {
-      //   title: 'LeetCode',
-      //   collapsable: false,
-      //   children: [
-      //     {
-      //       title: '简单',
-      //       sidebarDepth: 0,
-      //       children: listDirectory(path.join(__dirname, '../leetcode/easy')).filter(f => f.type === 'file').map(item => `/leetcode/easy/${item.fileName}`)
-      //     },
-      //     {
-      //       title: '中等',   // 必要的
-      //       sidebarDepth: 0,
-      //       children: listDirectory(path.join(__dirname, '../leetcode/middle')).filter(f => f.type === 'file').map(item => `/leetcode/middle/${item.fileName}`)
-      //     },
-      //     {
-      //       title: '困难',   // 必要的
-      //       sidebarDepth: 0,
-      //       children: listDirectory(path.join(__dirname, '../leetcode/hard')).filter(f => f.type === 'file').map(item => `/leetcode/hard/${item.fileName}`)
-      //     }
-      //   ]
-      // },
+      {
+        title: 'LeetCode',
+        collapsable: false,
+        children: [
+          {
+            title: '简单',
+            sidebarDepth: 0,
+            children: listDirectory(path.join(__dirname, '../leetcode/easy')).filter(f => f.type === 'file').map(item => `/leetcode/easy/${item.fileName}`)
+          },
+          {
+            title: '中等',   // 必要的
+            sidebarDepth: 0,
+            children: listDirectory(path.join(__dirname, '../leetcode/middle')).filter(f => f.type === 'file').map(item => `/leetcode/middle/${item.fileName}`)
+          },
+          {
+            title: '困难',   // 必要的
+            sidebarDepth: 0,
+            children: listDirectory(path.join(__dirname, '../leetcode/hard')).filter(f => f.type === 'file').map(item => `/leetcode/hard/${item.fileName}`)
+          }
+        ]
+      },
       {
         title: '小程序',
         collapsable: false,
